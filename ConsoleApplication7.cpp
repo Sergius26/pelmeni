@@ -6,6 +6,7 @@
 using namespace std;
 int main()
 {
+	setlocale(0,"RUS");
 	float P, N, t, at, qp, qt, qf, Qp,Qt,Qf,nt, np,nf;
 	cout << "Введите суточную выроботку цеха P:";
 	cin >> P;
@@ -27,9 +28,9 @@ int main()
 	nt = Qt / qt;
 	Qf = (1 - at) * Qp;
 	nf = Qf / qf;
-	cout << "Кол-во пельменных автоматов" << ceil(np);
-	cout << "Кол-во тестомесителей" << ceil(nt);
-	cout << "Кол-во куттеров" << ceil(nf);
+	cout << "\nКол-во пельменных автоматов " << ceil(np);
+	cout << "\nКол-во тестомесителей " << ceil(nt);
+	cout << "\nКол-во куттеров " << ceil(nf);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
